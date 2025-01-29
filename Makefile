@@ -32,9 +32,6 @@ server:
 burn:
 	bundle && yarn
 
-lint:
-	npx eslint "**/*.{js,vue}" --ignore-pattern "node_modules/" --ignore-pattern "webpack/" --ignore-pattern "cypress/"
-
 run:
 	@if [ -f ./.overmind.sock ]; then \
 		echo "Overmind is already running. Use 'make force_run' to start a new instance."; \
